@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Data Show</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="brand">
+			<p1 class="img-responsive logo title">标题</p1>
+		</div>
+		<div class="container-fluid">
+			<form class="navbar-form navbar-left">
+				<div class="input-group">
+					<input type="text" value="" class="form-control" placeholder="查询">
+					<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+				</div>
+			</form>
+			<div id="navbar-menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Help</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">疑难问题</a></li>
+							<li><a href="#">客服咨询</a></li>
+							<li><a href="#">。。。。</a></li>
+							<li><a href="#">。。。。</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span>郑跃田</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><i class="lnr lnr-user"></i> <span>个人信息</span></a></li>
+							<li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+							<li><a href="#"><i class="lnr lnr-exit"></i> <span>注销</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="sidebar-nav" class="sidebar">
+		<div class="sidebar-scroll">
+			<nav>
+				<ul class="nav">
+					<!--每次需要添加一个页面，直接复制这个index.html页面即可，但是菜单在每个页面钟都存在，到手修改菜单需要在所有html文件钟都修改。除了修改菜单内容，还得修改点击的高亮 ，请看下面一行的class="active"这个属性，菜单对应哪个页面，就设置这个属性，其他菜单为空，详情可对比index.html和ceshicandan2的不同-->
+					<li><a href="index.html" ><i class="lnr lnr-home"></i> <span>菜单1</span></a></li>
+					<li><a href="nav2.html" class="active"><i class="lnr lnr-code"></i> <span>菜单2</span></a></li>
+					<li><a href="nav3.html" class=""><i class="lnr lnr-chart-bars"></i> <span>菜单3</span></a></li>
+					<li><a href="" class=""><i class="lnr lnr-cog"></i> <span>菜单4</span></a></li>
+					<li><a href="" class=""><i class="lnr lnr-alarm"></i> <span>菜单5</span></a></li>
+					<li>
+						<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>菜单6</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+						<div id="subPages" class="collapse ">
+							<ul class="nav">
+								<li><a href="" class="">菜单6.1</a></li>
+								<li><a href="" class="">菜单6.2</a></li>
+								<li><a href="" class="">菜单6.3</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="" class=""><i class="lnr lnr-dice"></i> <span>菜单7</span></a></li>
+					<li><a href="" class=""><i class="lnr lnr-text-format"></i> <span>菜单8</span></a></li>
+					<li><a href="" class=""><i class="lnr lnr-linearicons"></i> <span>菜单9</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="main">
+		<!-- 在下面加上自己想要的东西 -->
+
+		<div>测试页面,菜单2</div>
+		<div class="container" style="padding: 100px 50px 10px;" >
+			<button type="button" class="btn btn-default" title="Popover title"
+					data-container="body" data-toggle="popover" data-placement="left"
+					data-content="左侧的 Popover 中的一些内容">
+				左侧的 Popover
+			</button>
+			<button type="button" class="btn btn-primary" title="Popover title"
+					data-container="body" data-toggle="popover" data-placement="top"
+					data-content="顶部的 Popover 中的一些内容">
+				顶部的 Popover
+			</button>
+			<button type="button" class="btn btn-success" title="Popover title"
+					data-container="body" data-toggle="popover" data-placement="bottom"
+					data-content="底部的 Popover 中的一些内容">
+				底部的 Popover
+			</button>
+			<button type="button" class="btn btn-warning" title="Popover title"
+					data-container="body" data-toggle="popover" data-placement="right"
+					data-content="右侧的 Popover 中的一些内容">
+				右侧的 Popover
+			</button>
+		</div>
+		<div>bootstrap已经引入</div>
+	</div>
+
+</div>
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="assets/vendor/chartist/js/chartist.min.js"></script>
+<script src="assets/scripts/klorofil-common.js"></script>
+<script src="assets/scripts/index.js"></script>
+</body>
+
+</html>
